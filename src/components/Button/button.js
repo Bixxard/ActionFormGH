@@ -2,63 +2,45 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Button extends Component {
-  constructor() {
-    super();
-    this.state = {
-      value: ''
-    }
-  }
-
-  _onClickHandler = () => {
-      const { onClick, id } = this.props;
-      // TODO ??
-      const { value } = this.state;
-      this.setState({ value: id });
-      onClick(id);
-  };
-
   render() {
     const {
-      innerText,
-      className,
-      html,
-      labelText,
-      children,
-      id
+      innerTextButton,
+      classNameButton,
+      labelTextButton,
+      onClickButton,
+      idButton,
+      onOffButton
     } = this.props;
     return (
+      onOffButton ?
       <div>
-          <div className="children">
-            {html && children}
-          </div>
-          {labelText && <label>{labelText}</label>}
-          <button
-            onClick={this._onClickHandler}
-            id={id}
-            className={className}>
-            {innerText}
-            </button>
+          {labelTextButton && <label>{labelTextButton}</label>}
+            <a href={onClickButton}>
+                <button
+                    id={idButton}
+                    className={classNameButton}>
+                    {innerTextButton}
+                </button>
+            </a>
       </div>
+      : ''
     );
   }
 }
-
-Button.propTypes = {
-  innerText: PropTypes.string,
-  className: PropTypes.string,
-  html: PropTypes.bool,
-  labelText: PropTypes.string,
-  id: PropTypes.string,
-  onClick: PropTypes.func
-};
-
+Button.protoType = {
+    idButton: PropTypes.string,
+    labelTextButton: PropTypes.string,
+    innerTextButton: PropTypes.string,
+    onClickButton: PropTypes.string,
+    classNameButton: PropTypes.string,
+    onOffButton: PropTypes.bool
+}
 Button.defaultProps = {
-  id: '',
-  innerText: '',
-  className: '',
-  html: false,
-  labelText: '',
-  onClick: () => {}
-};
-
+    idButton: 'defaultIdButton',
+    labelTextButton: '',
+    innerTextButton: 'textButton',
+    onClickButton: '',
+    classNameButton: "defaultClassButton",
+    onOffButton: true
+}
 export default Button;
