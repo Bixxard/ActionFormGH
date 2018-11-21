@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ListItem from './ListItem/index'
-import PropTypes from 'prop-types';
+import ListItem from './ListItem'
 
 class List extends Component {
     render() {
@@ -34,21 +33,5 @@ class List extends Component {
             </div>
         );
     }
-}
-List.propTypes = {
-    listItems: PropTypes.array,
-    listIcon: PropTypes.object,
-    classNameList: PropTypes.string,
-    limitItemList: PropTypes.number,
-    onOffList: PropTypes.bool,
-    searchValue: PropTypes.string
-}
-List.defaultProps = {
-    listItems: [],
-    listIcon: {},
-    classNameList: 'defaultClassInput',
-    limitItemList: 0,
-    onOffList: true,
-    searchValue: ''
 }
 export default List;

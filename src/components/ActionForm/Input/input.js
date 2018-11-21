@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from "prop-types";
 
 class Input extends Component {
     render() {
@@ -28,23 +27,4 @@ class Input extends Component {
         );
     }
 }
-Input.propTypes = {
-    placeholderInput: PropTypes.string,
-    typeInput: PropTypes.string,
-    classNameInput: PropTypes.string,
-    labelTextInput: PropTypes.string,
-    onOffInput: PropTypes.bool,
-    onChangeInput: PropTypes.func,
-    onClick: PropTypes.func
-}
-Input.defaultProps = {
-    placeholderInput: 'PlaceholderInput',
-    typeInput: 'text',
-    classNameInput: 'defaultClassInput',
-    labelTextInput: '',
-    onOffInput: true,
-    onChangeInput: () => {},
-    onClick: () => {}
-}
-
 export default Input;

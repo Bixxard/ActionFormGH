@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index should render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    className=""
+    html={false}
+    id=""
+    innerText="my text"
+    labelText=""
+    onClick={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="children"
+        />,
+        "",
+        <button
+          className=""
+          id=""
+          onClick={[Function]}
+        >
+          my text
+        </button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": false,
+          "className": "children",
+        },
+        "ref": null,
+        "rendered": false,
+        "type": "div",
+      },
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "my text",
+          "className": "",
+          "id": "",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "my text",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="children"
+          />,
+          "",
+          <button
+            className=""
+            id=""
+            onClick={[Function]}
+          >
+            my text
+          </button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": false,
+            "className": "children",
+          },
+          "ref": null,
+          "rendered": false,
+          "type": "div",
+        },
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "my text",
+            "className": "",
+            "id": "",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "my text",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Index should render with label 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    className=""
+    html={false}
+    id=""
+    innerText="my text"
+    labelText="test"
+    onClick={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="children"
+        />,
+        <label>
+          test
+        </label>,
+        <button
+          className=""
+          id=""
+          onClick={[Function]}
+        >
+          my text
+        </button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": false,
+          "className": "children",
+        },
+        "ref": null,
+        "rendered": false,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "test",
+        },
+        "ref": null,
+        "rendered": "test",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "my text",
+          "className": "",
+          "id": "",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "my text",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="children"
+          />,
+          <label>
+            test
+          </label>,
+          <button
+            className=""
+            id=""
+            onClick={[Function]}
+          >
+            my text
+          </button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": false,
+            "className": "children",
+          },
+          "ref": null,
+          "rendered": false,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "test",
+          },
+          "ref": null,
+          "rendered": "test",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "my text",
+            "className": "",
+            "id": "",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "my text",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

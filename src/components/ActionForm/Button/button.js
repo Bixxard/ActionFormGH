@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class Button extends Component {
   render() {
@@ -9,14 +8,16 @@ class Button extends Component {
       labelTextButton,
       onClickButton,
       idButton,
+      urlButton,
       onOffButton
     } = this.props;
     return (
       onOffButton ?
       <div>
           {labelTextButton && <label>{labelTextButton}</label>}
-            <a href={onClickButton}>
+            <a href={urlButton}>
                 <button
+                    onClick={onClickButton}
                     id={idButton}
                     className={classNameButton}>
                     {innerTextButton}
@@ -26,21 +27,5 @@ class Button extends Component {
       : ''
     );
   }
-}
-Button.protoType = {
-    idButton: PropTypes.string,
-    labelTextButton: PropTypes.string,
-    innerTextButton: PropTypes.string,
-    onClickButton: PropTypes.string,
-    classNameButton: PropTypes.string,
-    onOffButton: PropTypes.bool
-}
-Button.defaultProps = {
-    idButton: 'defaultIdButton',
-    labelTextButton: '',
-    innerTextButton: 'textButton',
-    onClickButton: '',
-    classNameButton: "defaultClassButton",
-    onOffButton: true
 }
 export default Button;
